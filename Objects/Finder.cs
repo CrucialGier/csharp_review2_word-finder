@@ -34,7 +34,15 @@ namespace WordFinder.Objects
 
     public int FindWord()
     {
-      string[] phraseArray = _phrase.Split(' ');
+      string phraseBare = "";
+      foreach (char symbol in _phrase)
+      {
+        if (!char.IsPunctuation(symbol))
+        {
+          phraseBare += symbol;
+        }
+      }
+      string[] phraseArray = phraseBare.Split(' ');
       foreach (string word in phraseArray)
       {
         if (word == _word)
