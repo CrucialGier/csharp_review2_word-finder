@@ -1,6 +1,6 @@
 using System;
 using Nancy;
-using Finder.Objects;
+using WordFinder.Objects;
 using System.Collections.Generic;
 
 namespace Finder
@@ -10,9 +10,6 @@ namespace Finder
     public HomeModule()
     {
       Get["/"] =_=> View["index.cshtml"];
-      Post["/phrase_search"] =_=> {
-        
-      }
     }
   }
 }

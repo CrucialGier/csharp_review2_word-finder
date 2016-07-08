@@ -5,7 +5,7 @@ using Xunit;
 
 namespace WordFinder.Objects
 {
-  public class Finder
-  { 
+  public class FinderTest
+  {
   }
 }

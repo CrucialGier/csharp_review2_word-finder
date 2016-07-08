@@ -34,16 +34,16 @@ namespace WordFinder.Objects
 
     public int FindWord()
     {
-      string[] phraseArray = _phrase.Split(" ");
+      string[] phraseArray = _phrase.Split(' ');
       foreach (string word in phraseArray)
       {
-        if (word = _word)
+        if (word == _word)
         {
-          _instancesFound++
+          _instancesFound++;
         }
-      }
+      };
       return _instancesFound;
     }
-    
+
   }
 }
