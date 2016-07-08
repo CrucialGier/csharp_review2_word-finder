@@ -9,7 +9,7 @@ namespace WordFinder.Objects
   {
     private string _word;
     private string _phrase;
-    private int _instancesFound;
+    private int _instancesFound = 0;
 
     public void SetWord(string word)
     {
@@ -19,7 +19,6 @@ namespace WordFinder.Objects
     {
       return _word;
     }
-
     public void SetPhrase(string phrase)
     {
       _phrase = phrase;
@@ -27,10 +26,24 @@ namespace WordFinder.Objects
     public string GetPhrase()
     {
       return _phrase;
-
+    }
     public int GetInstancesFound()
     {
       return _instancesFound;
     }
+
+    public int FindWord()
+    {
+      string[] phraseArray = _phrase.Split(" ");
+      foreach (string word in phraseArray)
+      {
+        if (word = _word)
+        {
+          _instancesFound++
+        }
+      }
+      return _instancesFound;
+    }
+    
   }
 }
