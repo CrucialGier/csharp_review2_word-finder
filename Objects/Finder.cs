@@ -42,6 +42,7 @@ namespace WordFinder.Objects
           phraseBare += symbol;
         }
       }
+      phraseBare = phraseBare.ToLower();
       string[] phraseArray = phraseBare.Split(' ');
       foreach (string word in phraseArray)
       {
