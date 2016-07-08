@@ -21,6 +21,10 @@
   *Example: Input: User enters : down;*
             *Output: string Word = "down";
 
+*The stored phrase should be searched for an instance of the stored word and return that the word was found in the phrase"
+  *Example: Input: User Clicks "Find Word" button;
+            Output: Page displays: "The phrase contains the chosen word";
+
 *The stored phrase should be searched for any instances of the stored word and return the number of times the word appears in the phrase.*
   *Example: Input: User Clicks "Find Word" button;
             Output: Page displays: "The word 'down' appears 2 time(s) in your phrase";*
