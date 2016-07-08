@@ -11,6 +11,14 @@ namespace WordFinder.Objects
     public void Finder_FindWordInSentence_2()
     {
       Finder newTestFinder = new Finder();
+      newTestFinder.SetWord("it");
+      newTestFinder.SetPhrase("Shut it down. Shut it down forever.");
+      Assert.Equal(2, newTestFinder.FindWord());
+    }
+    [Fact]
+    public void Finder_FindWordDespitePunctuation_2()
+    {
+      Finder newTestFinder = new Finder();
       newTestFinder.SetWord("down");
       newTestFinder.SetPhrase("Shut it down. Shut it down forever.");
       Assert.Equal(2, newTestFinder.FindWord());
