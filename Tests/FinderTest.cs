@@ -24,7 +24,7 @@ namespace WordFinder.Objects
       Assert.Equal(2, newTestFinder.FindWord());
     }
     [Fact]
-    public void Finder_FindWordDespitePunctuation_2()
+    public void Finder_FindWordDespiteCapitalization_2()
     {
       Finder newTestFinder = new Finder();
       newTestFinder.SetWord("shut");
