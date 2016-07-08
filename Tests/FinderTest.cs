@@ -23,5 +23,13 @@ namespace WordFinder.Objects
       newTestFinder.SetPhrase("Shut it down. Shut it down forever.");
       Assert.Equal(2, newTestFinder.FindWord());
     }
+    [Fact]
+    public void Finder_FindWordDespitePunctuation_2()
+    {
+      Finder newTestFinder = new Finder();
+      newTestFinder.SetWord("shut");
+      newTestFinder.SetPhrase("Shut it down. Shut it down forever.");
+      Assert.Equal(2, newTestFinder.FindWord());
+    }
   }
 }
