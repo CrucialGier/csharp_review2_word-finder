@@ -17,6 +17,14 @@
   *Example: Input: User enters : Shut it down. Shut it down forever.;*
             *Output : string Phrase = "Shut it down. Shut it down forever.";*
 
+*The word we'll be searching for should also be received from the user and stored in its own seperate variable*
+  *Example: Input: User enters : down;*
+            *Output: string Word = "down";
+
+*The stored phrase should be searched for any instances of the stored word and return the number of times the word appears in the phrase.*
+  *Example: Input: User Clicks "Find Word" button;
+            Output: Page displays: "The word 'down' appears 2 time(s) in your phrase";*
+
 ##Known Bugs
 
 None at the moment
