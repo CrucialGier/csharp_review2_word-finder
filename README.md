@@ -13,31 +13,9 @@
 
 ##Specs
 
-*The phrase we'll be searching should be received from the user and stored in it's own variable.*
-  *Example: Input: User enters : Shut it down. Shut it down forever.;*
-            *Output : string Phrase = "Shut it down. Shut it down forever.";*
-
-*The word we'll be searching for should also be received from the user and stored in its own seperate variable.*
-  *Example: Input: User enters : down;*
-            *Output: string Word = "down";*
-
-*The stored phrase should be searched for an instance of the stored word and return that the word was found in the phrase"*
-  *Example: Input: User Clicks "Find Word" button;*
-            *Output: Page displays: "The phrase contains the chosen word";*
-
-*The stored phrase should be searched for an instance of the stored word and return that the word was found in the phrase despite puctuation inside or next to the key word"*
-  *Example: Input: User Enters Word = "down" and Phrase = "down. !down!"*
-                    *User Clicks "Find Word" button;*
-            *Output: Page displays: "The phrase contains the chosen word";*
-
-*The stored phrase should be searched for an instance of the stored word and return that the word was found in the phrase despite capitalization of the key word"*
-  *Example: Input: User Enters Word = "down" and Phrase = "We're going DOWN!!"*
-                    *User Clicks "Find Word" button;*
-            *Output: Page displays: "The phrase contains the chosen word";*
-
-*The stored phrase should be searched for any instances of the stored word and return the number of times the word appears in the phrase.*
-  *Example: Input: User Clicks "Find Word" button;*
-            *Output: Page displays: "The word 'down' appears 2 time(s) in your phrase";*
+* It can find all instances of a provided word in a provided sentence.
+  * Input: User enters Word "shut", and Phrase "Shut it down. Shut it down forever!";
+  * Output: Webpage returns "Your word appears 2 time(s) int this phrase";
 
 ##Known Bugs
 
