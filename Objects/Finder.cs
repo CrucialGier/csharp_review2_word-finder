@@ -3,39 +3,15 @@ using Nancy;
 using System.Collections.Generic;
 using Xunit;
 
-namespace WordFinder.Objects
+namespace WordFinder
 {
-  public class Finder
+  public class RepeatCounter
   {
-    private string _word;
-    private string _phrase;
-    private int _instancesFound = 0;
-
-    public void SetWord(string word)
+    public static int CountRepeats(string Word, string Phrase)
     {
-      _word = word;
-    }
-    public string GetWord()
-    {
-      return _word;
-    }
-    public void SetPhrase(string phrase)
-    {
-      _phrase = phrase;
-    }
-    public string GetPhrase()
-    {
-      return _phrase;
-    }
-    public int GetInstancesFound()
-    {
-      return _instancesFound;
-    }
-
-    public int FindWord()
-    {
+      int InstancesFound = 0;
       string phraseBare = "";
-      foreach (char symbol in _phrase)
+      foreach (char symbol in Phrase)
       {
         if (!char.IsPunctuation(symbol))
         {
@@ -46,12 +22,12 @@ namespace WordFinder.Objects
       string[] phraseArray = phraseBare.Split(' ');
       foreach (string word in phraseArray)
       {
-        if (word == _word)
+        if (word == Word)
         {
-          _instancesFound++;
+          InstancesFound++;
         }
       };
-      return _instancesFound;
+      return InstancesFound;
     }
 
   }
